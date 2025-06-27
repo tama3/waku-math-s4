@@ -1,14 +1,80 @@
-# Run and deploy your AI Studio app
+# わくわく算数チャレンジ！ 🧮✨
 
-This contains everything you need to run your app locally.
+子供向けの楽しい算数ゲームアプリです。レベルアップしながら四則演算（足し算、引き算、掛け算、割り算）を学べます。
 
-## Run Locally
+## 🎮 ゲームの特徴
 
-**Prerequisites:**  Node.js
+- **レベルアップシステム**: 3つのレベルで徐々に難易度が上がります
+- **スコアシステム**: 正解するとスコアとコンボボーナスが加算されます
+- **美しいUI**: レベルごとに異なるテーマカラーとキャラクター画像
+- **日本語対応**: 子供に親しみやすい日本語インターフェース
+- **アクセシビリティ**: キーボード操作にも対応
 
+## 🚀 セットアップと実行
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### 必要な環境
+- Node.js (最新版推奨)
+
+### インストール手順
+
+1. **依存関係をインストール**
+   ```bash
+   npm install
+   ```
+
+2. **開発サーバーを起動**
+   ```bash
+   npm run dev
+   ```
+
+3. **ブラウザでアクセス**
+   ```
+   http://localhost:5173
+   ```
+
+## 🎯 ゲームの遊び方
+
+1. **スタート**: 「スタート！」ボタンをクリックしてゲーム開始
+2. **問題を解く**: 表示される算数問題に答えを入力
+3. **レベルアップ**: 各レベルで5問正解すると次のレベルに進めます
+4. **スコア獲得**: 正解すると10点 + コンボボーナスを獲得
+
+## 🛠️ 開発用コマンド
+
+```bash
+# 開発サーバー起動
+npm run dev
+
+# 本番用ビルド
+npm run build
+
+# ビルド結果のプレビュー
+npm run preview
+```
+
+## 📁 プロジェクト構成
+
+```
+waku-math-s4/
+├── components/          # Reactコンポーネント
+├── App.tsx             # メインアプリケーション
+├── constants.ts        # ゲーム設定と定数
+├── types.ts           # TypeScript型定義
+├── package.json       # プロジェクト設定
+└── README.md          # このファイル
+```
+
+## 🎨 技術スタック
+
+- **React 19** - ユーザーインターフェース
+- **TypeScript** - 型安全性
+- **Vite** - 高速な開発環境とビルドツール
+- **Tailwind CSS** - スタイリング
+
+## 📝 ライセンス
+
+このプロジェクトはMITライセンスの下で公開されています。
+
+---
+
+**楽しく算数を学ぼう！** 🎓✨
